@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - OST</title>
+		<link rel="icon" type="image/png" href="ost/!ost.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+			
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+			
+			div img.banner {
+				width:100%;
+				margin-top:0px;
+				margin-bottom:-20px;
+			}
+			
+			
+			
+			
+			div main{
+				margin-top:20px;
+				width:100%;
+				background:#F9F9F9;
+				height:900px;
+				border-radius:8px;
+				
+				overflow:hidden;
+				
+			}
+			
+			div main section{
+				width:100%;
+				height:100%;
+				margin:0px;
+				
+			}
+			
+			div main section article{
+				margin:0px;
+				height:900px;
+				
+			}
+			
+			div main section article img{
+				width:40%;
+				float:left;
+				margin:70px 0px 20px 200px;
+				
+			}
+			
+			div main section article div.contenedor{
+				font-size:150%;
+				font-family:Bahnschrift;
+				
+				float:right;
+				text-align:center;
+				width:20%;
+				margin:10px 160px 0px 0px;
+				
+			}
+			
+			div main section article div.contenedor:hover div.contenido{
+				
+				display:inline-block;
+				
+			}
+			
+			
+			div main section article div.contenedor div.contenido{
+				display:none;
+				
+				width:100%;
+				
+				text-align:center;
+				margin:0px;
+			}
+			
+			div main section article div.contenedor div.contenido img{
+				width:100%;
+				margin:auto;
+			}
+			
+			div main section article div.contenedor div.contenido a img:hover{
+				transition:all 0.3s ease;
+				border-left:8px solid #62158A;
+			}
+			
+			div main section article div.contenedor p{
+				color:#62158A;
+				font-size:80%;
+				
+			}
+			
+			div main section article table{
+				margin-left:50px;
+				margin-top:33%;
+				clear:both;
+				top:90%;
+				left:20%;
+				
+				display:block;
+				border-collapse:collapse;
+				text-align:center;
+			
+			}
+			
+			
+			
+			div main section article table tr th{
+				width:450px;
+				height:60px;
+				border-collapse:collapse;
+				background:#8826BB;
+				color:white;
+				font-family:Arial Narrow;
+				font-size:140%;
+				
+			}
+			
+			div main section article table tr td{
+				width:450px;
+				height:100px;
+				
+			}
+			
+			div main section article table tr td iframe{
+				width:100%;
+				height:100%;
+			}
+			
+			div main section article table tr td img{
+				margin:0px;
+				margin-left:28%;
+				
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			
+			</header>
+			<main>
+				<section>
+					<article>
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						
+					</article>
+					
+					
+					
+				
+				</section>
+				<section  >
+					<article id="apartado1">
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						<br/>
+						
+							<table>
+							<tr>
+								<td background="white" colspan="2"><img src="mgs1/mgs1logo.png"/></td>
+							</tr>
+							
+							<tr>
+								<th>MGS1 - Tema Principal</th>
+								<th>MGS1 - Alerta</th>
+							</tr>
+							<tr>
+								<td>
+								<audio controls>
+									<source src="audio/mgs1maintheme.mp3" type="audio/mp3"/>
+								
+								</audio>
+								</td>
+								<td>
+								<audio controls>
+									<source src="audio/mgs1encounter.mp3" type="audio/mp3"/>
+								
+								</audio>
+								
+								</td>
+							</tr>
+							<tr>
+								<th>MGS1 - Psycho Mantis Hymn</th>
+								<th>MGS1 - Colosseo</th>
+							</tr>
+							<tr>
+								<td>
+									<audio controls>
+										<source src="audio/mgs1hymn.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/mgs1colosseo.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+							</tr>
+						</table>
+						
+						
+					</article>
+					
+					
+					
+					
+					
+				
+				</section>
+				
+				<section  >
+					<article id="apartado2">
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						<br/>
+						
+							<table>
+							<tr>
+								<td background="white" colspan="2"><img src="mgs2/mgs2logo.png"/></td>
+							</tr>
+							
+							<tr>
+								<th>MGS2 - Tema Principal</th>
+								<th>MGS2 - Revolver Ocelot</th>
+							</tr>
+							<tr>
+								<td>
+								<audio controls>
+									<source src="audio/mgs2maintheme.mp3" type="audio/mp3"/>
+								
+								</audio>
+								</td>
+								<td>
+								<audio controls>
+									<source src="audio/mgs2ocelot.mp3" type="audio/mp3"/>
+								
+								</audio>
+								
+								</td>
+							</tr>
+							<tr>
+								<th>MGS2 - Sneaking</th>
+								<th>MGS2 - Vamp Theme</th>
+							</tr>
+							<tr>
+								<td>
+									<audio controls>
+										<source src="audio/mgs2sneaking.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/mgs2vamptheme.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+							</tr>
+						</table>
+						
+						
+					</article>
+					
+					
+					
+					
+					
+				
+				</section>
+				
+				
+				<section>
+					<article id="apartado3">
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						<br/>
+						
+							<table>
+							<tr>
+								<td background="white" colspan="2"><img src="mgs3/mgs3logo.png"/></td>
+							</tr>
+							
+							<tr>
+								<th>MGS3 - Snake Eater</th>
+								<th>MGS3 - CQC</th>
+							</tr>
+							<tr>
+								<td>
+								<audio controls>
+									<source src="audio/mgs3snakeeater.mp3" type="audio/mp3"/>
+								
+								</audio>
+								</td>
+								<td>
+								<audio controls>
+									<source src="audio/mgs3cqc.mp3" type="audio/mp3"/>
+								
+								</audio>
+								
+								</td>
+							</tr>
+							<tr>
+								<th>MGS3 - The Pain Theme</th>
+								<th>MGS3 - Clash With Evil Personified</th>
+							</tr>
+							<tr>
+								<td>
+									<audio controls>
+										<source src="audio/mgs3thepain.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/mgs3clashwithevil.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+							</tr>
+						</table>
+						
+						
+					</article>
+					
+					
+					
+					
+					
+				
+				</section>
+			
+			
+				<section>
+					<article id="apartado4">
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						<br/>
+						
+							<table>
+							<tr>
+								<td background="white" colspan="2"><img src="mgs4/mgs4logo.png"/></td>
+							</tr>
+							
+							<tr>
+								<th>MGS4 - Vista Mansion</th>
+								<th>MGS4 - Gekko</th>
+							</tr>
+							<tr>
+								<td>
+								<audio controls>
+									<source src="audio/mgs4vistamansion.mp3" type="audio/mp3"/>
+								
+								</audio>
+								</td>
+								<td>
+								<audio controls>
+									<source src="audio/mgs4gekko.mp3" type="audio/mp3"/>
+								
+								</audio>
+								
+								</td>
+							</tr>
+							<tr>
+								<th>MGS4 - Endless Pain</th>
+								<th>MGS4 - Violent Ceasefire</th>
+							</tr>
+							<tr>
+								<td>
+									<audio controls>
+										<source src="audio/mgs4endlesspain.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/mgs4violent.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+							</tr>
+						</table>
+						
+						
+					</article>
+					
+					
+					
+				</section>
+				
+				
+				<section>
+					<article id="apartado5">
+						<img src="ost/OSTlogo.png"/>
+						<div class="contenedor">
+							<p><strong>⬇  <u>Escoge un juego</u> ⬇</strong></p>
+							<div class="contenido">
+								<a href="#apartado1"><img src="mgs1/mgs1logo.png"/></a>
+								<br/>
+								
+								<a href="#apartado2"><img src="mgs2/mgs2logo.png"/></a>
+								<br/>
+								<a href="#apartado3"><img src="mgs3/mgs3logo.png"/></a>
+								<br/>
+								<a href="#apartado4"><img src="mgs4/mgs4logo.png"/></a>
+								<br/>
+								<a href="#apartado5"><img src="mgs5/mgs5logo.png"/></a>
+								
+							</div>
+						</div>
+						<br/>
+						
+							<table>
+							<tr>
+								<td background="white" colspan="2"><img src="mgs5/mgs5logo.png"/></td>
+							</tr>
+							
+							<tr>
+								<th>MGS5 - Sins of the Father</th>
+								<th>MGS5 - Afghanistan's a Big Place</th>
+							</tr>
+							<tr>
+								<td>
+								<audio controls>
+									<source src="audio/mgs5sins.mp3" type="audio/mp3"/>
+								
+								</audio>
+								</td>
+								<td>
+								<audio controls>
+									<source src="audio/mgs5afganistan.mp3" type="audio/mp3"/>
+								
+								</audio>
+								
+								</td>
+							</tr>
+							<tr>
+								<th>MGS5 - Exfiltrate the Hotzone</th>
+								<th>MGS5 - A Factory of Death</th>
+							</tr>
+							<tr>
+								<td>
+									<audio controls>
+										<source src="audio/mgs5hotzone.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+								<td>
+									<audio controls>
+										<source src="audio/mgs5factory.mp3" type="audio/mp3"/>
+									
+									</audio>
+								</td>
+							</tr>
+						</table>
+						
+						
+					</article>
+					
+					
+					
+					
+					
+				
+				</section>
+				
+			</main>
+		
+		
+		
+		
+		
+		</div>
+	
+	
+	</body>
+
+
+</html>

@@ -1,0 +1,422 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - Quizz</title>
+		<link rel="icon" type="image/png" href="quizz/!quizz.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+			
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+			
+			
+			div img.banner {
+				width:100%;
+				margin-top:0px;
+				margin-bottom:-20px;
+			}
+			
+	
+	
+	
+			div main {
+				height:80%;
+				background:#F4F4F4;
+				border-radius:10px;
+				margin-top:10px;
+				overflow:hidden;
+			}
+	
+			div main section{
+				width:100%;
+				height:100%;
+				margin-bottom:900px;
+			}
+			
+			div main section article{
+				overflow:auto;
+			}
+			
+			div main section
+			
+			
+			div main section.apartado1 article div{
+				border:1px solid black;
+				margin:auto;
+				text-align:center;
+				font-size:140%;
+				font-family:Bahnschrift;
+				padding:20px;
+			}
+			
+			div main section.apartado1 article div img{
+				width:50%;
+			}
+			
+			div main section.apartado1 article div p{
+				font-size:110%;
+			}
+			
+			div main section.apartado1 article div a{
+				background:#FFF92C;
+				border-radius:5px;
+				padding:10px;
+				border:3px solid #EEEB89;
+				text-decoration:none;
+			}
+			
+			div main section article div{
+				
+				border-radius:9px;
+				text-align:center;
+				font-size:140%;
+				font-family:Bahnschrift;
+				padding:20px;
+				height:80%;
+				margin:30px;
+			}
+			
+			
+			div main section article div a{
+				background:#FFF92C;
+				border-radius:5px;
+				padding:10px;
+				border:3px solid #EEEB89;
+				text-decoration:none;
+				margin:auto;
+				color:black;
+			}
+			
+			div main section article div a:hover{
+				transition:all 0.5s ease;
+				background:#F5E865;
+				
+			}
+			
+			
+			div main section article div img{
+				width:45%;
+				margin:10px 0px 40px 0px;
+				border-radius:20px;
+				border:9px solid #E9D93A;
+			}
+			
+			div main section.apartado7 article div p.comentario{
+				font-size:150%;
+			}
+			
+			div main section.apartado7 article div{
+				padding-top:150px;
+			}
+			
+			
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+		
+		
+		
+	var puntos = 0;
+	
+	
+	function actualizar(){
+	var cuadro = document.getElementById("cuadrores");
+	cuadro.innerHTML = puntos;
+	
+	var cuadrocomentario = document.getElementById("comentario");
+		
+		if (puntos < 3){
+			cuadrocomentario.innerHTML = "Suerte la próxima vez";
+			cuadrocomentario.style.color = "red";
+		}
+		
+		else if (puntos == 3){
+			cuadrocomentario.innerHTML = "Casi lo tienes";
+			cuadrocomentario.style.color = "orange";
+		}
+		
+		else{
+			cuadrocomentario.innerHTML= "Le sabes";
+			cuadrocomentario.style.color = "green";
+		}
+		
+	}
+	
+	function correcto(){
+		puntos = puntos + 1;
+	}
+	
+	function reseteo(){
+		puntos = 0;
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+		
+
+		
+		
+		
+		
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			
+			</header>
+			
+			<main>
+				<section id="apartado1" class="apartado1">
+					<article>
+						<div>
+							<img src="quizz/quizzlogo.png"/>
+							<p><strong>▶ Pon a prueba tus conocimientos sobre Metal Gear Solid ◀</strong></p>
+							<br/>
+							<a href="#apartado2">COMENZAR</a>
+						</div>
+					
+					</article>
+				</section>
+				
+				<section id="apartado2">
+					<article>
+						<div>
+							<img src="quizz/pregunta1.png"/>
+							<p><strong>1)  ¿Cuál es el nombre en clave del protagonista de Metal Gear Solid 3?</strong></p>
+							<br/>
+							<a href="#apartado3" onclick="correcto()">Naked Snake</a>
+							<a href="#apartado3">Venom Snake</a>
+						</div>
+					
+					</article>
+				
+				
+				</section>
+			
+				<section id="apartado3">
+					<article>
+						<div>
+							<img src="quizz/pregunta2.png"/>
+							<p><strong>2) ¿En qué países toman lugar las misiones en Metal Gear Solid 5?</strong></p>
+							<br/>
+							<a href="#apartado4">Turkmenistán y Zambia</a>
+							<a href="#apartado4" onclick="correcto()">Afganistán y Angola</a>
+						</div>
+					
+					</article>
+				
+				
+				</section>
+				
+				<section id="apartado4">
+					<article>
+						<div>
+							<img src="quizz/pregunta3.png"/>
+							<p><strong>3) ¿Qué virus le implantan a Snake en Metal Gear Solid 1?</strong></p>
+							<br/>
+							<a href="#apartado5">FOXDEATH</a>
+							<a href="#apartado5" onclick="correcto()">FOXDIE</a>
+						</div>
+					
+					</article>
+				
+				
+				</section>
+				
+				<section id="apartado5">
+					<article>
+						<div>
+							<img src="quizz/pregunta4.png"/>
+							<p><strong>4) ¿Cómo se llama el equipo comandado por Meryl en Metal Gear Solid 4?</strong></p>
+							<br/>
+							<a href="#apartado6" onclick="correcto()">Rat Patrol</a>
+							<a href="#apartado6">Diamond Dogs</a>
+						</div>
+					
+					</article>
+				
+				
+				</section>
+				<section id="apartado6">
+					<article>
+						<div>
+							<img src="quizz/pregunta5.png"/>
+							<p><strong>5) ¿Qué arma se le entrega a Raiden en la parte final de Metal Gear Solid 2?</strong></p>
+							<br/>
+							<a href="#apartado7" onclick="actualizar();">Un lanzamisiles</a>
+							<a href="#apartado7" onclick="correcto();actualizar();"  >Una katana</a>
+						</div>
+					
+					</article>
+				
+				
+				</section>
+				
+				<section id="apartado7" class="apartado7">
+					<article>
+						<div>
+							<p>Su puntuación ha sido de <span id="cuadrores"></span>/5</p>
+							<br/>
+							<p id="comentario" class="comentario"></p>
+							<br/>
+							<a href="#apartado1" onclick="reseteo();">Volver a empezar</a>
+						
+						</div>
+					
+					</article>
+				
+				</section>
+			
+			</main>
+		
+		
+		</div>
+	
+	
+	
+	
+	</body>
+
+
+
+
+
+
+
+
+</html>

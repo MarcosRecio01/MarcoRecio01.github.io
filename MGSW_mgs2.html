@@ -1,0 +1,390 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - MGS2</title>
+		<link rel="icon" type="image/png" href="mgs2/!2.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+		
+		div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+		
+		
+			div aside{
+				background-image:url(mgs2/!2.png);
+				background-size:cover;
+				background-repeat:no repeat;
+				border-radius:20px;
+				width:22%;
+				height:50%;
+				position:fixed;
+				top:32%;
+				padding:10px;
+			}
+			
+			div aside nav{
+				height:100%;
+				width:100%;
+				margin:15px 15px 5px 15px;
+			
+			}
+			
+			div aside nav ul{
+				list-style-type:"➲ ";
+				font-size:140%;
+				font-weight:bolder;
+				font-family:Bahnschrift;
+				color:#2875C3;
+			}
+			
+			div aside nav ul li a{
+				color:white;
+				text-decoration:none;
+				 text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+			}
+			
+			div aside nav ul li ol li a{
+				color:#D1E8FF;
+				text-decoration:none;
+				font-size:90%;
+			}
+		
+		
+		
+		div main {
+				margin-top:17px;
+				width:68%;
+				height:1300px;
+				float:right;
+				overflow:hidden;
+			}
+			
+			div main section{
+				width:100%;
+				height:100%;
+				margin-bottom:350px;
+			}
+			
+			div main section article{
+				background:#F4F4F4;
+				border-radius:20px;
+				padding:20px;
+			}
+			
+			div main section article.art1{
+				height:90%;
+				
+			}
+			
+			div main section article.art1 img.mgs2cover{
+				margin:20px 10px 0px 0px;
+				width:45%;
+				float:right;
+			}
+			
+			div main section article.art1 img.mgs2logo{
+				width:50%;
+			}
+			
+			div main section article.art2{
+				
+				height:100%;
+			}
+			
+			div main section article h1{
+				font-family:Trebuchet MS;
+				font-size:170%; 
+				color:#4678E3;
+				border-bottom:4px solid #86ABFC;
+				width:40%;
+				
+			}
+			
+			div main section article p{
+				padding-right:30px;
+				font-family:Bahnschrift;
+				font-size:120%;
+				
+			}
+			
+			div main section article img.mgs2image{
+				float:right;
+				margin:10px;
+				width:40%;
+				border-radius:5px;
+			}
+		
+			div main section article img.mgs2bigshell{
+				width:30%;
+				float:left;
+				border-radius:5px;
+				margin:10px;
+			}
+			
+			div main section article img.mgs2final{
+				width:40%;
+				float:right;
+				border-radius:5px;
+				margin:10px;
+			}
+		
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png" id="INICIO"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			<!--MS Gothic	, Bahnschrift-->
+			</header>
+			
+			<aside>
+				<nav>
+					<ul>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#INICIO">PRINCIPIO</a></li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec1">GENERAL</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#mgs2logo">La secuela milenaria</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#G2">Refinando el sistema</a></li>
+							</ol>
+						
+						</li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec2">TRAMA</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T1">Philantropy <br/>contra el RAY</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T2">Raiden, el <br/>nuevo agente</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T3">Desenlace en <br/>Nueva York</a></li>
+							</ol>
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		
+			<main>
+				<section id="sec1" class="sec1">
+					<article id="art1" class="art1">
+						<img src="mgs2/mgs2logo.png" class="mgs2logo" id="mgs2logo"/>
+						<img src="mgs2/mgs2cover.png" class="mgs2cover"/>
+						<h1>La secuela milenaria</h1>
+						<br />
+						<p><em><strong>Metal Gear Solid 2: Sons of Liberty</strong></em>, lanzado el 13 de noviembre de 2001, es el cuarto juego de la serie Metal Gear, 
+						y secuela directa del aclamado Metal Gear Solid de la Playstation Original. 
+						Su lanzamiento fue seguido por una edición ampliada, llamada Metal Gear Solid 2: Substance para las consolas Playstation 2, Xbox y Pc.
+						El juego fue bien recibido, consiguiendo mas de 7 millones de copias en todo el mundo, y marcando un récord de 96 en Metacritic.</p>
+						<br/>
+						<h1 id="G2">Refinando el sistema</h1>
+						<br/>
+						<img src="mgs2/mgs2image.png" class="mgs2image"/>
+						<p>Se trata una continuación del sigilo instaurado por sus antecesores. Además, este juego cuenta con más elementos que su predecesor. Para comenzar, se agrego un nuevo <strong>modo de Primera Persona</strong>, que permite apuntar y dispara con las armas de una manera mas precisa, 
+						ampliando enormemente las opciones tácticas, por ejemplo, permitiendo disparar a los extintores para que el vapor 
+						ciegue a los enemigos.
+						<br/>
+						Entre los movimientos nuevos, se agrego la posibilidad de caminar lentamente, 
+						lo que permite moverse a hurtadillas sin hacer ruido, la posibilidad de colgar por la barandillas para evitar a los guardias o cubrirse en las esquinas, asomarse y disparar mientras te cubres.
+						Los guardias cuentan con una <strong>mayor IA</strong>, teniendo ahora un mayor trabajo en equipo. Ahora, pueden llamar por las radios para pedir 
+						apoyo en cuando ven al jugador, flanquear al mismo y cortar sus rutas de escape. 
+						Además, los soldados que vengan en ayuda contaran con chalecos antibalas y escudos antidisturbios, por lo que son una mayor amenaza. Para esconderse, se agregaron nuevas posibilidades, como esconderse en los armarios o en los baños.</p>
+						
+					</article>
+				
+				</section>
+				<section id="sec2" class="sec2">
+					<article id="art2" class="art2">
+						<h1 id="T1">Phylantropy<br/> contra el RAY</h1>
+						<br/>
+						<p>Así pues en la primera misión nos encontramos en el <em>2007</em>, dos años después de los hechos acontecidos en Shadow Moses. Snake y Otacon, ahora miembros de la <strong>ONG Philantropy</strong>, investigan la creación de un nuevo Metal Gear anfibio.
+
+						Snake vuelve a meterse en misiones de infiltración, 
+						en este caso en el barco que transporta al nuevo Metal Gear a través del río Hudson. 
+						Por desgracia el U.S.S. Discovery, que es como se llama la embarcación, es atacado poco después de su llegada por un grupo terrorista ruso liderado por un tal <strong>Sergei Gurlukovich</strong>. 
+						También se topará con la hija de este, llamada <strong>Olga</strong>.
+						De todas formas Snake logra inflitrarse y realizar fotos del RAY, 
+						el nuevo prototipo anfibio de Metal Gear. Por su parte <strong>Revolver Ocelot</strong> vuelve a hacer acto de presencia, 
+						aniquilando a Sergei. Así las cosas logra hundir el barco
+						 y escapar con el RAY.</p>
+						<br/>
+						<h1 id="T2">Raiden, el <br/>nuevo agente</h1>
+						<br/>
+						<img src="mgs2/mgs2bigshell.png" class="mgs2bigshell"/>
+						<p>La otra misión nos pone en la piel de <strong>Raiden</strong> y tiene lugar dos años después 
+						de la infiltración de Snake en el U.S.S. Discovery, concretamente el <em>29 de abril del año 2009</em>. 
+						Su misión es infiltrarse en una planta de limpieza medioambiental llamada <strong>Big Shell</strong> y rescatar a los
+						rehenes que un grupo terrorista llamado Sons of Liberty tiene allí presos, entre los que se encuentra el mismísmo presidente de los Estados Unidos. Raiden
+						Vuelve a aparecer la figura del cyborg ninja. Se hace llamar <strong>Mr. X</strong> y le hecha un cable a Raiden. 
+						Este acaba localizando al presidente de los EE.UU. y descubre que en realidad en Big Shell se está llevando a cabo la fabricación de un nuevo Metal Gear, llamado Arsenal Gear.
+						Ocelot se carga al presidente, Raiden se deshace del Arsenal Gear y <strong>Pliskin</strong>, 
+						uno de los miembros de la SEAL con los que trabaja Raiden, asegura ser Solid Snake. 
+						</p>
+						<br/>
+						<h1 id="T3">Desenlace en<br/> Nueva York</h1>
+						<br/>
+						<img src="mgs2/mgs2final.png" class="mgs2final"/>
+						<p> Raiden es puesto a prueba por <strong>Solidus Snake</strong>, quien le revela que es su padre adoptivo. 
+						Olga, que en realidad es una agente doble, ayuda a Raiden a escapar y localiza a Snake. Solidus se carga a Olga. 
+						Ocelot confiesa ser un agente de los Patriot. Mata a Fortune, que le estaba poniendo las cosas difíciles a Snake
+						y se sube al propotipo de Metal Gear RAY robado dos años antes, en el barco. Liquid toma el control de Ocelot y lanza al RAY al océano, mientras el Arsenal Gear
+						se dirige hacia Nueva York. Raiden vence a Solidus y Snake desaparece, no sin antes confesarle a Raiden 
+						que tanto él como Otacon tienen pensado rastrear a Ocelot y al Metal Gear.</p>
+					</article>
+				</section>
+			
+			
+			
+			
+			
+			
+			
+			</main>
+		
+		
+		
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

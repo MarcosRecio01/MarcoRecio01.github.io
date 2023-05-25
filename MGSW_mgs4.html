@@ -1,0 +1,387 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - MGS4</title>
+		<link rel="icon" type="image/png" href="mgs4/!4.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+		
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+		
+		
+			div aside{
+				background-image:url(mgs4/!4.png);
+				background-size:cover;
+				background-repeat:no repeat;
+				border-radius:20px;
+				width:22%;
+				height:50%;
+				position:fixed;
+				top:32%;
+				padding:10px;
+			}
+			
+			div aside nav{
+				height:100%;
+				width:100%;
+				margin:15px 15px 5px 15px;
+			
+			}
+			
+			div aside nav ul{
+				list-style-type:"➲ ";
+				font-size:140%;
+				font-weight:bolder;
+				font-family:Bahnschrift;
+				color:#987238;
+			}
+			
+			div aside nav ul li a{
+				color:white;
+				text-decoration:none;
+				 text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+			}
+			
+			div aside nav ul li ol li a{
+				color:#ffe3b7;
+				text-decoration:none;
+				font-size:90%;
+			}
+		
+		
+		
+		div main {
+				margin-top:17px;
+				width:68%;
+				height:1500px;
+				float:right;
+				overflow:hidden;
+			}
+			
+			div main section{
+				width:100%;
+				height:100%;
+			}
+			
+			div main section article{
+				background:#F4F4F4;
+				border-radius:20px;
+				padding:20px;
+			}
+			
+			div main section article.art1{
+				height:70%;
+				
+			}
+			
+			div main section article.art1 img.mgs4cover{
+				margin:20px 10px 0px 0px;
+				width:45%;
+				float:right;
+			}
+			
+			div main section article.art1 img.mgs4logo{
+				width:50%;
+			}
+			
+			div main section article.art2{
+				
+				height:98%;
+			}
+			
+			div main section article h1{
+				font-family:Trebuchet MS;
+				font-size:170%;
+				color:#987238;
+				border-bottom:4px solid #c09046;
+				width:40%;
+				
+			}
+			
+			div main section article p{
+				padding-right:50px;
+				font-family:Bahnschrift;
+				font-size:120%;
+			}
+			
+		
+			div main section article img.mgs4image{
+				width:30%;
+				border-radius:5px;
+				margin:10px;
+				float:left;
+			}
+		
+			div main section article img.mgs4final{
+				width:30%;
+				border-radius:5px;
+				margin:10px;
+				float:left;
+			}
+		
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png" id="INICIO"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			<!--MS Gothic	, Bahnschrift-->
+			</header>
+			
+			<aside>
+				<nav>
+					<ul>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#INICIO">PRINCIPIO</a></li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec1">GENERAL</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#mgs4logo">El fin de una etapa</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#G2">Hit de Play 3</a></li>
+							</ol>
+						
+						</li>
+						<li><a href="#sec2">TRAMA</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T1">La guerra ha cambiado</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T2">Arma biológica</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T3">Un último aliento</a></li>
+							</ol>
+						
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		
+			<main>
+				<section id="sec1" class="sec1">
+					<article id="art1" class="art1">
+						<img src="mgs4/mgs4logo.png" class="mgs4logo" id="#mgs4logo"/>
+						<img src="mgs4/mgs4cover.png" class="mgs4cover"/>
+						<h1>El fin de una etapa</h1>
+						<br />
+						<p><strong><em>Metal Gear Solid 4: Guns of the Patriots</em></strong>, comúnmente abreviado como MGS4 fue 
+						dirigido por Hideo Kojima, Shuyo Murata y Yoji Shinkawa, y fue desarrollado en exclusiva para la <em>PlayStation 3</em>. 
+						Su lema durante el desarrollo fue “No Place to Hide!” (¡No hay lugar para esconderse!). Según Ryan Payton, 
+						este sería el último Metal Gear canónico en presentar a Solid Snake como protagonista. 
+						El juego fue lanzado mundialmente el <em>12 de junio de 2008</em>, exactamente 10 años después de Metal Gear Solid y 
+						20 años después del lanzamiento norteamericano de Metal Gear.</p>
+						<br/>
+						<h1 id="G2">Hit de Play 3</h1>
+						<br/>
+						<img src="mgs4/mgs4image.png" class="mgs4image"/>
+						<p>Metal Gear Solid 4 recibió elogios de la crítica, obteniendo nombramientos de Juego del Año
+						en varias publicaciones de videojuegos, incluyendo a Gamespot, 
+						que elogió al juego por ser técnicamente impecable. Desde su lanzamiento, se vendieron más de 4.33 millones de copias. El 16 de junio de 2009, aproximadamente un año después de su lanzamiento, 
+						MGS4 fue lanzado en la serie Greatest Hits de Playstation.</p>
+					</article>
+				
+				</section>
+				<section id="sec2" class="sec2">
+					<article id="art2" class="art2">
+						<h1 id="T1">La guerra ha cambiado</h1>
+						<br/>
+						<p>
+						La historia se sitúa en el año 2014, cinco años después del Incidente Manhattan.
+						Solid Snake aparece considerablemente envejecido debido a su avanzada degeneración celular, 
+						establecido desde un principio en el proceso de clonación que lo creó.
+						Metal Gear Solid 4 retrata un mundo donde el dominio militar en tierras extranjeras es el objetivo 
+						para dominar la economía, llevando a mercenarios a pelear grandes batallas con fines financieros mediante las PMC/PNC.
+						Sin embargo, cinco de las grandes PMCs están empeñadas en formar una sola gran compañía: Outer Heaven,
+						nombre de la compañía de mercenarios de Big Boss.
+						Esta organización está al mando de Liquid Ocelot, quien tiene la capacidad de tomar el control total 
+						sobre las nanomáquinas de los soldados.
+						Con el mundo una vez más en crisis, Solid Snake es reclutado por Roy Campbell quien ahora trabaja para
+						la ONU como asesor y le pide ayuda a Snake para detener a Liquid, acompañado por el Dr. Emmerich.
+						</p>
+						<br/>
+						<h1 id="T2">Arma biológica</h1>
+						<br/>
+						<p>Snake planea aprovechar las ventajas de un levantamiento rebelde en la zona para así, pasar desapercibido en la base de Pieuvre Armement, otra base manejada por Liquid, donde Naomi se encuentra.
+						Snake se infiltra en la zona y una vez más se encuentra con Drebin, quien revela que los Patriots son en realidad una red de cinco IA.
+						También le revela que hay un equipo élite conocidos como Beauty and Beast.
+						Después, Snake se encuentra con Naomi y ella le explica que Líquid ha planificado el uso del ADN de Big Boss 
+						para encontrar al sistema JD y tomar el control de SOP, el sistema de nanomáquinas y ID-autenticaciones que permiten a los Patriots vigilar y controlar a los soldados.
+						Sin embargo, acotó que su vida era lo que menos le preocupaba ya que el hecho de que el virus FOXDIE esté 
+						en su cuerpo crea una mutación el cual ya ha comenzado y se estima que en 3 meses el virus haya 
+						mutado lo suficiente como para atacar a todos; se ha convertido en ‘un arma biológica ambulante‘.</p>
+						<br/>
+						<h1 id="T3">Un último aliento</h1>
+						<br/>
+						<img src="mgs4/mgs4final.png" class="mgs4final"/>
+						<p>
+						Los Marines de EE. UU. tenían más de las que acaban de dejar indefenso a Outer Heaven, su tripulación desactivada y sus soldados en un estado de retiro de las nanomáquinas SOP. En la confusión, 
+						Ocelot toma a la vela de Outer Heaven y le agradece el cumplimiento de los propios objetivos de Liquid. Su plan para el uso del rail 
+						gun de REX era sólo una distracción a fin de que los propios intentos de Snake de derrocar el sistema pasaran desapercibidas 
+						a los ojos de los Patriots, que había previsto la intención de Snake de detener a Liquid. 
+						Después de esta revelación, la personalidad 
+						de Liquid declara que tienen "una deuda que resolver", y actúa sobre su último deseo en el cuerpo de Ocelot:
+						una lucha sin armas contra Solid Snake, siendo esta un especie de revancha desde la pelea que tuvieron
+						arriba de REX en Metal Gear Solid.
+						A medida que la pelea avanza, se comienzan a notar cambios en el estilo de pelea de Liquid, 
+						pareciéndose más a los de Ocelot en MGS3. Liquid es derrotado por última vez, desapareciendo su personalidad y 
+						con ello, hace regresar a Ocelot.</p> 
+						
+					
+					</article>
+				</section>
+			
+			
+			
+			
+			
+			
+			
+			</main>
+		
+		
+		
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

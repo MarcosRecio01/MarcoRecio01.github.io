@@ -1,0 +1,393 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - MGS5</title>
+		<link rel="icon" type="image/png" href="mgs5/!5.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+		
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+		
+		
+			div aside{
+				background-image:url(mgs5/!5.png);
+				background-size:cover;
+				background-repeat:no repeat;
+				border-radius:20px;
+				width:22%;
+				height:50%;
+				position:fixed;
+				top:32%;
+				padding:10px;
+			}
+			
+			div aside nav{
+				height:100%;
+				width:100%;
+				margin:15px 15px 5px 15px;
+			
+			}
+			
+			div aside nav ul{
+				list-style-type:"➲ ";
+				font-size:140%;
+				font-weight:bolder;
+				font-family:Bahnschrift;
+				color:#933a35;
+			}
+			
+			div aside nav ul li a{
+				color:white;
+				text-decoration:none;
+				 text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+			}
+			
+			div aside nav ul li ol li a{
+				color:#ffd2d0;
+				text-decoration:none;
+				font-size:90%;
+			}
+		
+		
+		
+		div main {
+				margin-top:17px;
+				width:68%;
+				height:1600px;
+				float:right;
+				overflow:hidden;
+			}
+			
+			div main section{
+				width:100%;
+				height:100%;
+			}
+			
+			div main section article{
+				background:#F4F4F4;
+				border-radius:20px;
+				padding:20px;
+			}
+			
+			div main section article.art1{
+				height:65%;
+				
+			}
+			
+			div main section article.art1 img.mgs5cover{
+				margin:20px 10px 0px 0px;
+				width:45%;
+				float:right;
+			}
+			
+			div main section article.art1 img.mgs5logo{
+				width:50%;
+			}
+			
+			div main section article.art2{
+				
+				height:100%;
+			}
+			
+			div main section article h1{
+				font-family:Trebuchet MS;
+				font-size:170%;
+				color:#933a35;
+				border-bottom:4px solid #bd5953;
+				width:40%;
+				
+			}
+			
+			div main section article p{
+				padding-right:50px;
+				font-family:Bahnschrift;
+				font-size:120%;
+			}
+			
+		
+			div main section article img.mgs5image{
+				margin:10px;
+				float:left;
+				width:35%;
+				border-radius:5px;
+			}
+		
+			div main section article img.mgs5gz{
+				margin:10px;
+				float:left;
+				width:35%;
+				border-radius:5px;
+			}
+		
+			div main section article img.mgs5final{
+				margin:10px;
+				float:right;
+				width:35%;
+				border-radius:5px;
+			}
+		
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png" id="INICIO"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			<!--MS Gothic	, Bahnschrift-->
+			</header>
+			
+			<aside>
+				<nav>
+					<ul>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#INICIO">PRINCIPIO</a></li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec1">GENERAL</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#mgs5logo">De vuelta al ruedo</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#G2">Nuevos enfoques</a></li>
+							</ol>
+						
+						</li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec2">TRAMA</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T1">Rescate en Afganistán</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T2">El virus del idioma</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T3">La verdad</a></li>
+							</ol>
+						
+						
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		
+			<main>
+				<section id="sec1" class="sec1">
+					<article id="art1" class="art1">
+						<img src="mgs5/mgs5logo.png" class="mgs5logo" id="mgs5logo"/>
+						<img src="mgs5/mgs5cover.png" class="mgs5cover"/>
+						<h1>De vuelta al ruedo</h1>
+						<br />
+						<p><strong><em>Metal Gear Solid V: The Phantom Pain</em></strong> fue lanzado el <em>1 de
+						septiembre de 2015</em> para las plataformas PlayStation 3, PlayStation 4, Xbox 360, Xbox One y Microsoft Windows. Fue desarrollado por Kojima Productions; 
+						con Hideo Kojima a la cabeza ejerciendo de director, diseñador, guionista y productor.
+						El desarrollo de este juego se confirmó el <em>7 de diciembre de 2012</em> en los Spike Video Game Awards. 
+						En la Game Developers Conference realizada en la ciudad de San Francisco en Estados Unidos el 27 de marzo de 2013</p>
+						<br/>
+						<h1 id="G2">Nuevos enfoques</h1>
+						<br/>
+						<img src="mgs5/mgs5image.png" class="mgs5image"/>
+						<p>Metal Gear Solid V se dividiría en dos partes: un prólogo llamado <strong>Metal Gear Solid V: Ground Zeroes y The Phantom Pain</strong>. Ambos se desarrollarían en mundo abierto (aunque con pantallas de carga, 
+						como declararía Hideo Kojima días después a Eurogamer) y que también contaría 
+						con transiciones de día y noche, las cuales afectarían el desarrollo del mismo.
+						<br/>
+						Está ambientado en <em>1984</em>, 9 años tras los acontecimientos de Ground Zeroes y
+						 11 años antes de la trama de Metal Gear. Su subtítulo se refiere a una condición médica asociada con los amputados; cuando un individuo experimenta sensaciones, específicamente el dolor, en miembros fantasma que ya no forman parte de su cuerpo.</p>
+					</article>
+				
+				</section>
+				<section id="sec2" class="sec2">
+					<article id="art2" class="art2">
+						<h1 id="T1">Rescate en Afganistán</h1>
+						<br/>
+						<img src="mgs5/mgs5gz.png" class="mgs5gz"/>
+						<p>The Phantom Pain se sitúa <em>9 años después</em>, con <strong>MSF</strong> destruida y Big Boss despertando de un coma. Al despertar descubre que le falta un brazo. Un hombre llamado Ishmael lo ayuda a escapar del hospital anglo-chipriota, que 
+						es atacado por un grupo militar desconocido matando a todos los pacientes del lugar, aparentemente para encontrar a Snake. Snake e Ishmael 
+						logran llegar hasta una ambulancia donde escapan pero chocan. 
+						Al parecer solo sobrevive Snake, que sale de la ambulancia y se encuentra con Ocelot que lo ayuda a huir. Algunos personajes que atacan el hospital parecen ser un Hombre de fuego y una joven Psycho Mantis que le controla.
+						Big Boss y Ocelot se dirigen a <em>Afganistán</em>, para rescatar a 
+						<strong>Kazuhira Miller</strong>, quien está siendo torturado por las fuerzas soviéticas que han invadido el país. 
+						Después de rescatar a Miller y enfrentarse a unos nuevos supersoldados llamados Skulls fundan <strong>Diamond Dogs</strong>.
+						Durante la Guerra en Afganistán, Snake conoce a algunos personajes 
+						como <strong>Skull Face</strong> o la francotiradora <strong>9 años después</strong>. Posteriormente, descubren a <strong>Huey Emmerich</strong> que está trabajando con XOF y van a por él. Además este descubre lo que parece ser un nuevo 
+						Metal Gear llamado <strong>Sahelanthropus</strong>. En la base donde se estará desarrollando este arma tendremos que rescatar a Huey de las manos de Skull Face para finalmente huir de del Sahelanthropus. </p>
+						<br/>
+						<h1 id="T2">El virus del idioma</h1>
+						<br/>
+						<p>Tras llegar a <em>África</em> descubre la existencia de niños soldados en la zona a quienes tendrá que liberar incluyendo a su líder, 
+						<strong>Eli</strong> que será de raza blanca. Además Snake se enfrentará al Hombre de Fuego en una planta médica. Deciden ponerse en contacto con Code Talker, científico que trabajó con XOF sobre 
+						los parásitos. Así se descubrirá que Skull Face ha desarrollado un virus que afecta solamente a los hablantes de inglés. 
+						Tras esto, Snake deberá enfrentarse al Sahelanthropus en una operación conjunta junto a varios miembros de Diamond Dogs 
+						y acabar con Skull Face.
+						se descubre que el Hombre de fuego era en realidad Volgin. 
+						También los niños que fueron salvados en el África se escapan con Eli que se lleva el Metal Gear 
+						. Luego empieza otra plaga en la base madre, 
+						esta vez generada por Huey con el fin de vender el parásito al mejor postor, lo que le costó su exilio. 
+						</p>
+						<br/>
+						<h1 id="T3">La verdad</h1>
+						<br/>
+						<img src="mgs5/mgs5final.png" class="mgs5final"/>
+						<p>Snake se ve obligado a matar a sus propios soldados para evitar que se propague el virus, 
+						ya que al parecer están evolucionando. Quiet se encuentra entre la venganza contra Snake y el amor y 
+						afecto que le acaba teniendo tras trabajar con él. Entonces se va. Acaba secuestrada por los soviéticos y tendremos que protegerle. 
+						Snake es envenenado por una cobra y por eso Quiet se ve en la obligación de hablar en inglés para atraer al piloto 
+						Pequod al lugar a través de la tormenta de arena. Quiet activa la plaga del inglés y al hacerlo se adentra en el desierto para no 
+						infectar a nadie y morir sola. Ya en el final mediante una cinta nos revelan que el protagonista no es Big Boss sino el médico que
+						nos acompañaba. 
+						Mientras oímos el casette se escuchan tiros de fondo y <strong>Venom Snake</strong> asume su nueva identidad de ser el fantasma de Big Boss</p>
+						
+						
+						
+					</article>
+				</section>
+			
+			
+			
+			
+			
+			
+			
+			</main>
+		
+		
+		
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

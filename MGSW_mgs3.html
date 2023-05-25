@@ -1,0 +1,397 @@
+<!DOCTYPE>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - MGS3</title>
+		<link rel="icon" type="image/png" href="mgs3/!3.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+		
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+		
+		
+			div aside{
+				background-image:url(mgs3/!3.png);
+				background-size:cover;
+				background-repeat:no repeat;
+				border-radius:20px;
+				width:22%;
+				height:50%;
+				position:fixed;
+				top:32%;
+				padding:10px;
+			}
+			
+			div aside nav{
+				height:100%;
+				width:100%;
+				margin:15px 15px 5px 15px;
+			
+			}
+			
+			div aside nav ul{
+				list-style-type:"➲ ";
+				font-size:140%;
+				font-weight:bolder;
+				font-family:Bahnschrift;
+				color:#4a7a3a;
+			}
+			
+			div aside nav ul li a{
+				color:white;
+				text-decoration:none;
+				 text-shadow: 1px  0px 0px black,
+               0px  1px 0px black,
+              -1px  0px 0px black,
+               0px -1px 0px black;
+			}
+			
+			div aside nav ul li ol li a{
+				color:#d3fcc5;
+				text-decoration:none;
+				font-size:90%;
+			}
+		
+		
+		
+		div main {
+				margin-top:17px;
+				width:68%;
+				height:1700px;
+				float:right;
+				overflow:hidden;
+			}
+			
+			div main section{
+				width:100%;
+				height:100%;
+			}
+			
+			div main section article{
+				background:#F4F4F4;
+				border-radius:20px;
+				padding:20px;
+			}
+			
+			div main section article.art1{
+				height:60%;
+				
+			}
+			
+			div main section article.art1 img.mgs3cover{
+				margin:40px 10px 40px 0px;
+				width:45%;
+				float:right;
+			}
+			
+			div main section article.art1 img.mgs3logo{
+				width:50%;
+			}
+			
+			div main section article.art2{
+				
+				height:100%;
+			}
+			
+			div main section article h1{
+				font-family:Trebuchet MS;
+				font-size:170%;
+				color:#77b562;
+				border-bottom:4px solid #9dd48a;
+				width:40%;
+				
+			}
+			
+			div main section article p{
+				padding-right:50px;
+				font-family:Bahnschrift;
+				font-size:120%;
+			}
+			
+		
+			div main section article img.mgs3image{
+				margin:10px;
+				border-radius:5px;
+				width:25%;
+				float:left;
+			}
+		
+			div main section article img.mgs3image2{
+				margin:10px;
+				border-radius:5px;
+				width:40%;
+				float:right;
+			}
+			
+			div main section article img.mgs3final{
+				margin:10px;
+				border-radius:5px;
+				width:40%;
+				float:left;
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png" id="INICIO"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			<!--MS Gothic	, Bahnschrift-->
+			</header>
+			
+			<aside>
+				<nav>
+					<ul>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#INICIO">PRINCIPIO</a></li>
+						<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#sec1">GENERAL</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#mgs3logo">La precuela estrella</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#G2">Recibimiento estelar</a></li>
+							</ol>
+						
+						</li>
+						<li><a href="#sec2">TRAMA</a>
+							<ol>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T1">Misión Virtuosa</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T2">Operación<br/> Snake Eater</a></li>
+								<li><a onclick="snd2.play();" onmouseover="snd1.play();" href="#T3">Surge Big Boss</a></li>
+							</ol>
+						
+						</li>
+					</ul>
+				</nav>
+			</aside>
+		
+			<main>
+				<section id="sec1" class="sec1">
+					<article id="art1" class="art1">
+						<img src="mgs3/mgs3logo.png" class="mgs3logo" id="mgs3logo"/>
+						<img src="mgs3/mgs3cover.png" class="mgs3cover"/>
+						<h1>La precuela estrella</h1>
+						<br />
+						<p><strong><em>Metal Gear Solid 3: Snake Eater</em></strong> fue lanzado el <em>17 de noviembre de 2004</em> para la 
+						plataforma PlayStation 2 al igual que su antecesor, tratándose de la tercera entrega de la saga Metal Gear Solid, y quinta de la saga Metal Gear creada 
+						por Hideo Kojima. En esta entrega, tanto el sistema de juego como la línea argumental cambian radicalmente, aún 
+						permaneciendo fieles a los títulos anteriores. Al desarrollarse la acción en <em>1964</em>, las armas, vestimentas, 
+						pensamientos políticos e intrigas son típicas de la <strong>Guerra Fría</strong>.</p>
+						<br/>
+						<h1 id="G2">Recibimiento estelar</h1>
+						<br/>
+						<img src="mgs3/mgs3image.png" class="mgs3image"/>
+						<p>En Japón y Estados Unidos salió al mercado en 2004, obteniendo críticas excelentes por parte de expertos, revistas y aficionados. En <strong>España</strong> el juego fue lanzado al mercado el <em>5 de marzo de 2005</em>, 
+						los fans de la saga esperaban impacientes este título, que había obtenido excelentes críticas tanto en Japón como en Estados Unidos. La trama, el sonido, los detallados gráficos y el nuevo sistema de juego y de cura hicieron de esta nueva entrega de las aventuras de Snake un juego atractivo y muy entretenido. 
+						Es considerado por muchos de los aficionados como el juego definitivo de Metal Gear.</p>
+					</article>
+				
+				</section>
+				<section id="sec2" class="sec2">
+					<article id="art2" class="art2">
+						<h1 id="T1">Misión Virtuosa</h1>
+						<br/>
+						<img src="mgs3/mgs3image2.png" class="mgs3image2"/>
+						<p>En el año 1964, nos encontramos en un período de tiempo que pasaría a la Historia por albergar la llamada Guerra Fría entre EE. UU. y la U.R.S.S.
+
+						La URSS mantiene retenido a <strong>Nikolai Stepanovich Sokolov</strong>, un ingeniero que trabaja en una nueva arma súper secreta, 
+						que daría una superioridad técnica frente a EE. UU., lo que podría provocar el final de la Guerra Fría y empezar una guerra verdadera, la Tercera Guerra Mundial. 
+						Para evitar esto, el Gobierno estadounidense envía a Jack, un joven agente de la recién creada unidad FOX, 
+						especialista en misiones de infiltración. El equipo se desplaza en avión a Tselinoyarsk, donde Sokolov se encuentra retenido,
+						 y desde donde Jack se lanzaría en paracaídas y comenzaría la llamada <strong>Misión Virtuosa</strong>. 
+						 La misión de <strong>Naked Snake</strong> consiste en rescatar a Sokolov quien ha sido forzado a construir un 
+						tanque de lanzamiento nuclear llamado <strong>Shagohod</strong> con el que pretenden atacar occidente.
+						La misión marcha sin problemas hasta que The Boss decide traicionar inesperadamente a los Estados Unidos al entregarle al 
+						comandante GRU y su nuevo benefactor, <strong>Yevgeny Borisovitch Volgin</strong> dos cabezas nucleares. Producto de la conmoción, 
+						Snake se enfrenta con su mentora quien fácilmente lo vence y lo tira por un puente sobre el río mientras
+						ve como la Unidad Cobra se lleva a Sokolov y al Shagohod con ellos.</p>
+						<br/>
+						<h1 id="T2">Operación <br/>Snake Eater</h1>
+						<br/>
+						<p>Al borde de una guerra nuclear, los Estados Unidos hacen un trato con los rusos: una oportunidad 
+						de demostrar su inocencia desplegando una vez más a Naked Snake a suelo ruso con tres objetivos en claro: 
+						destruir el Shagohod, matar a Volgin y finalmente eliminar a The Boss y a sus hombres, 
+						la Unidad Cobra.
+						Snake es asistido por <strong>EVA</strong>, otra disidente estadounidense y ex agente de la NSA que había desertado algunos años antes. Después de diversos roces con miembros de la Unidad Ocelot y tras matar a casi todos los integrantes de la Unidad Cobra, Snake finalmente 
+						se adentra en el interior de la fortaleza de Volgin: <strong>Groznyj Grad</strong>. <br/>Snake logra dar 
+						con el paradero de Sokolov y el Shagohod, pero es descubierto por Volgin quien luego lo interroga con dureza sometiéndolo a 
+						una dolorosa tortura. En el proceso de tortura, Snake pierde su ojo derecho.
+						En última instancia Snake sobrevive a la tortura y es mandado a un calabozo, pero consigue escapar.</p>
+						<br/>
+						<h1 id="T3">Surge Big Boss</h1>
+						<br/>
+						<img src="mgs3/mgs3final.png" class="mgs3final"/>
+						<p>Completamente recuperado de sus lesiones previas, Snake vuelve a las instalaciones de Volgin para destruir el Shagohod.
+						Pero en ese momento se entera de la existencia de un grupo llamado <strong>Los Filósofos</strong>, un grupo oligárcico 
+						compuesto por los hombres más poderosos de Estados Unidos, Rusia y China que controlan al mundo en secreto. 
+						Sin embargo tras la Segunda Guerra Mundial sus integrantes terminó por disolverse. El Legado de los Filósofos fue un fondo económico que esta 
+						organización creara para financiar sus guerras el cual fue dividido y escondido en todo el mundo. 
+
+						Snake tiene éxito en destruir Groznyj Grad y al Shagohod matando a Volgin en el proceso. Snake se enfrenta a The Boss, su maestra y guía, y a la que 
+						 debe de matar para cumplir su misión. 
+						 The Boss le da El Legado de Los Filósofos y le pide que la asesine con su propia arma, la Patriot. Snake, dudando un instante, 
+						 cumple su misión y le dan el sobrenombre de <strong>Big Boss</strong>.</p>
+						
+						
+						
+						
+						
+						
+						
+					
+					</article>
+				</section>
+			
+			
+			
+			
+			
+			
+			
+			</main>
+		
+		
+		
+		
+		</div>
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	</body>
+
+
+
+</html>

@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<meta charset="utf-8">
+		<title>MGSWiki - Inicio</title>
+		<link rel="icon" type="image/png" href="!inicio.png">
+		<style type="text/css">
+			*{
+				box-sizing:border-box;
+				margin:0px;
+			}
+			
+			body{
+				background-image:url(fondogris.jpg);
+				background-size:cover;
+				background-repeat:no repeat;
+				background-attachment:fixed;
+				
+				
+			}
+			
+			div{
+				margin:-10px 200px 100px 200px;
+			}
+			
+			div header img.logo {
+				width:45%;
+				margin:-20px 0px -50px 0px;
+			}
+			
+			div header nav{
+				text-align:center;
+				background:#F4F4F4;
+				width:100%;
+				height:70px;
+				display:flex;
+				border-radius:3px;
+			}
+			
+			div header nav a{
+				padding:20px 20px 20px 20px;
+				vertical-align:auto;
+				font-size:150%;
+				font-family:Arial Narrow;
+				font-weight:bolder;
+				border-radius:3px;
+				flex-direction:row;
+				justify-content:stretch;
+				text-align:center;
+				margin:auto;
+				width:15%;
+				text-decoration:none;
+				color:black;
+
+			}
+			
+			div header nav a.inicio:hover{
+				transition:all 0.3s ease;
+				background:#4C4C4C;
+				color:white;
+				border-bottom:solid 6px #313131;
+			}
+			
+			
+			
+			div header nav a.ost:hover{
+				transition:all 0.3s ease;
+				background:#7E47B3;
+				color:white;
+				border-bottom:solid 6px #683A92;
+			}
+			
+			div header nav a.mgs1:hover{
+				transition:all 0.3s ease;
+				background:#AAC7C8;
+				color:white;
+				border-bottom:solid 6px #95B6B9;
+			}
+			
+			div header nav a.mgs2:hover{
+				transition:all 0.3s ease;
+				background:#6496F4;
+				color:white;
+				border-bottom:solid 6px #5580D2;
+				
+			}
+			
+			div header nav a.mgs3:hover{
+				transition:all 0.3s ease;
+				background:#97D372;
+				color:white;
+				border-bottom:solid 6px #87BD66;
+			}
+			
+			div header nav a.mgs4:hover{
+				transition:all 0.3s ease;
+				background:#F3BA6E;
+				color:white;
+				border-bottom:solid 6px #D9A662;
+			}
+			
+			div header nav a.mgs5:hover{
+				transition:all 0.3s ease;
+				background:#EE482E;
+				color:white;
+				border-bottom:solid 6px #D3422B;
+			}
+			
+			div header nav a.quizz:hover{
+				transition:all 0.3s ease;
+				background:#FFEB28;
+				color:white;
+				border-bottom:solid 6px #E5D638;
+			}
+			
+			div img.banner {
+				width:100%;
+				margin-top:0px;
+				margin-bottom:-20px;
+			}
+			
+			
+			<!-- PARTE NO FIJA -->
+			
+			
+			div main section {
+				overflow:auto;
+				display:flex;
+				flex-direction:column;
+			}
+			
+			div main section article{
+				margin-top:10px;
+			}
+			
+			div main section article.entrada {
+				padding:16px 4px 16px 4px;
+				background:#F9F9F9;
+				border-radius:11px;
+				margin-bottom:30px;
+				height:20%;
+			}
+			
+			div main section article.entrada img.foxlogo1{
+				width:10%;
+				float:right;
+				margin-left:20px;
+				margin-right:30px;
+				
+			}
+			
+			div main section article.entrada img.foxlogo2{
+				width:10%;
+				float:left;
+				margin-left:25px;
+				margin-right:40px;
+				
+			}
+			
+			
+			
+			div main section article.entrada ul li{
+				list-style-image:url(flecha_negra.png);
+				font-family:Bahnschrift;
+				font-size:120%;
+				color:black;
+			}
+			
+			div main section article.entrada ul li a{
+				color:black;
+			}
+			
+			div main section article.acerca_de{
+				width:50%;
+				margin-top:20px;
+			}
+			
+			div main section article.web_oficial{
+				width:50%;
+				margin-top:20px;
+			}
+			
+			div main section article.formulario{
+				width:40%;
+				margin-top:20px;
+			}
+			
+			div main section article.web_oficial img{
+				width:100%;
+			}
+			
+			div main section article h1{
+				color:#333333;
+				font-size:190%;
+				margin:auto;
+				margin-bottom:10px;
+				width:97%;
+				text-align:center;
+				font-family:Lucida Sans Unicode;
+				border-bottom:4px solid #4F4F4F;
+			}
+			
+			div main section article h2{
+				font-size:120%;
+				color:white;
+				background:#2B2B2B;
+				width:100%;
+				text-align:center;
+				padding:10px 0px 10px 0px;
+				border-radius:8px 8px 0px 0px;
+				font-family:Verdana;
+				
+			}
+			
+			div main section article p{
+				color:#2B2B2B;
+				width:100%;
+				background:#F9F9F9;
+				margin:auto;
+				font-family:Bahnschrift;
+				padding:10px;
+			}
+			
+			div main section.section2{
+				height:800px;
+				width:100%;
+				overflow:auto;
+				display:flex;
+				flex-direction:column;
+				flex-wrap:wrap;
+			}
+			
+			div main section.section2 article form{
+				font-size:150%;
+				font-family:Bahnschrift;
+				background:#F9F9F9;
+				width:100%;
+				padding:20px;
+			}
+			
+			div main section.section2 article form input[type="text"]{
+				width:80%;
+			}
+			
+			div main section.section2 article form input[type="email"]{
+				width:80%;	
+			}
+		</style>
+	</head>
+	<script type="text/javascript">
+		var snd1 = new Audio("sonido_interfaz1.mp3");
+		snd1.currentTime=0;
+		
+		var snd2 = new Audio("sonido_interfaz2.mp3");
+		snd2.currentTime=0;
+	
+	
+		if (history.scrollRestoration) {
+		history.scrollRestoration = 'manual';
+		}
+		else {
+    window.onbeforeunload = function () {
+        window.scrollTo(0, 0);
+		}
+		}
+	</script>
+	<body>
+		<div>
+			<header>
+			<img class="logo" src="MGSLogo.png"/>
+			<nav>
+				<a onmouseover="snd1.play();" class="inicio" href="index.html">INICIO</a>
+				<a onmouseover="snd1.play();" class="mgs1" href="MGSW_mgs1.html">MGS1</a>
+				<a onmouseover="snd1.play();" class="mgs2" href="MGSW_mgs2.html">MGS2</a>
+				<a onmouseover="snd1.play();" class="mgs3" href="MGSW_mgs3.html">MGS3</a>
+				<a onmouseover="snd1.play();" class="mgs4" href="MGSW_mgs4.html">MGS4</a>
+				<a onmouseover="snd1.play();" class="mgs5" href="MGSW_mgs5.html">MGS5</a>
+				<a onmouseover="snd1.play();" class="ost" href="MGSW_ost.html">OST</a>
+				<a onmouseover="snd1.play();" class="quizz" href="MGSW_quizz.html">QUIZZ</a>
+			</nav>
+			<!--MS Gothic	, Bahnschrift-->
+			</header>
+			<img class="banner" src="MGSbanner.png"/>
+			<main>
+				
+				<section>
+					<article class="entrada">
+						<h1>【 LA SAGA METAL GEAR EN SU MÁXIMO ESPLENDOR 】</h1>
+						<img src="foxlogo.png" class="foxlogo2"/>
+						<img src="foxlogo.png" class="foxlogo1"/>
+						<ul>
+						<li>Bienvenido a <em><strong>Metal Gear Solid Wiki</strong></em>, página donde podrá informarse de datos y curiosidades de una de las
+						sagas más icónicas de los videojuegos.
+						</li>
+						<li>Presentamos una serie de páginas con información de cada una de las entregas principales además de un avance cronológico de
+						la evolución del desarrollo de la saga a lo largo de los años.
+						</li>
+						<li>Siéntese libre de <a href="#formulario">registrarse</a> si desea enterarse de los últimos cambios y novedades.
+						</li>
+						</ul>
+					</article>
+				
+				</section>
+				
+				
+				
+				<section class="section2">
+					<article class="acerca_de">
+						<h2>ACERCA DE</h2>
+						<p width="100%">Página web hecha por <strong>Marcos Recio</strong>. <br/>Actual estudiante de ASIR en el IES Castelar <em>(2023)</em></p>
+					</article>
+					<article class="web_oficial">
+						<h2>↓&nbsp &nbspPÁGINA OFICIAL&nbsp &nbsp↓</h2>
+						<a href="https://www.konami.com/games/eu/en/products/mgs/" target="_blank" alt="oficial_logo"><img src="pg_oficial_logo.jpg"/></a>
+					</article>
+					
+				
+				
+					<article class="formulario">
+						<h2 id="formulario">REGÍSTRESE</h2>
+						<form action="https://jkorpela.fi/cgi-bin/echo.cgi" method="POST" target="dummyframe">
+							<label><strong>☮ NOMBRE :</strong></label>
+							<br/>
+							<input type="text" name="nombre" size="40" maxlength="50" />
+							<br/>
+							<br/>
+							<label><strong>☮ APELLIDOS :</strong></label>
+							<br/>
+							<input type="text" name="apellidos" size="40" maxlength="50" />
+							<br/>
+							<br/>
+							<label><strong>☮ SEXO :</strong></label>
+							<br/>
+							
+							<input type="radio" name="sexo" value="varon" /><label>Varón</label>&nbsp <input type="radio" name="sexo" value="mujer" /><label>Mujer</label>
+							<br/>
+							<br/>
+							<label><strong>☮ CORREO ELECTRÓNICO :</strong></label>
+							<br/>
+							<input type="email" name="email" size="40"/>
+							<br/>
+							<br/>
+							<label><strong>☮ FECHA DE NACIMIENTO :</strong></label>
+							<br/>
+							<input type="date" name="fecha_nac"/>
+							<br/>
+							<br/>
+							<label>✧ Mantenerme informado</label>&nbsp <input type="checkbox" />
+							<br/>
+							<br/>
+							<input type="submit" value="ENVIAR"/>
+							<iframe name="dummyframe" id="dummyframe" style="display: none;"></iframe>
+						</form>
+					
+					</article>
+				
+				</section>
+			
+			
+			</main>
+		</div>
+	</body>
+
+</html>
